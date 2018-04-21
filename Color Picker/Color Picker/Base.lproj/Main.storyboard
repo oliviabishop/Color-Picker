@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Color_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmj-9S-vKf">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="IxC-n1-SJn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NvK-Ww-9uj"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R3-UH-0Z6">
+                                <rect key="frame" x="166" y="390" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bmj-9S-vKf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6jy-eE-a5e"/>
+                            <constraint firstItem="bmj-9S-vKf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Aam-AT-g4u"/>
+                            <constraint firstItem="1R3-UH-0Z6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E2C-Gn-opw"/>
+                            <constraint firstItem="bmj-9S-vKf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JYB-J8-MR6"/>
+                            <constraint firstItem="bmj-9S-vKf" firstAttribute="top" secondItem="1R3-UH-0Z6" secondAttribute="bottom" constant="40" id="weD-ct-SPj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="colorLabel" destination="1R3-UH-0Z6" id="VeV-Fz-06O"/>
+                        <outlet property="colorPicker" destination="bmj-9S-vKf" id="CJl-qa-07H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
